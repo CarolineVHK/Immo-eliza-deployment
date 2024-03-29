@@ -1,13 +1,15 @@
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
-# Set the working directory inside the container
-WORKDIR /app
 
 # Copy the rest of the app
 COPY . /app
 
+# Set the working directory inside the container
+WORKDIR /app
+
 # Install dependencies
-RUN pip install --no-cache-dir --upgrade -r requirements.txt
+RUN RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
 
 
 # Make port 8000 available to the world outside this container
