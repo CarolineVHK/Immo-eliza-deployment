@@ -5,8 +5,33 @@ st.set_page_config(
     page_icon = "👋"
 )
 
-st.title(" 👋  Welcom to my page")
+st.title(" 👋  Welcome ")
+st.title("Welcome to Immo Eliza's Real Estate Price Prediction 🚀 ")
+st.write("Hi there! Welcome to Immo Eliza's Real Estate Price Prediction page.")
+st.write("I'm a student at BeCode, and as part of a big project, I've developed a machine learning model to make price predictions on real estate sales in Belgium for the real estate company Immo Eliza.")
+st.write("The main goal of this project was to provide accurate price predictions for houses and apartments in Belgium, helping Immo Eliza's clients make informed decisions.")
 
-st.sidebar.success("Select a page above")
+# Create a session state variable to manage navigation
+session_state = st.session_state.get("session_state", {"selected_page": None})
+
+
+#st.write("Choose the type of real estate for which you'd like to make a prediction:")
+# Handle button click events
+if st.button("Houses"):
+    # Redirect to the "houses" page
+    st.query_params(page="houses")
+elif st.button("Apartments (In Progress)"):
+    # Redirect to the "apartments" page
+    st.query_params(page="apartments")
+
+st.write("Please select a real estate type.")
+
+st.write("Please note that the prediction functionality for apartments is still in progress. Stay tuned for updates!")
+
+
+
+
+
+st.sidebar.title("Select which type of real estate you want to make a prediction")
 
 
