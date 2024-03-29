@@ -1,7 +1,0 @@
-#requirements
-FastAPI
-uvicorn
-joblib
-sklearn
-pandas
-
