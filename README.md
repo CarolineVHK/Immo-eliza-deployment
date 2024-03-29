@@ -6,8 +6,8 @@ Here you will find two different way's to make a prediction for your property.
 
 
 # How to use
-Working with the api, you can have acces via : https://immo-eliza-deployment-api-zi3a.onrender.com/docs
-Working with streamlit: you need to clone the repo via: git@github.com:CarolineVHK/Immo-eliza-deployment.git
+Working with the api, you can have acces via : 'https://immo-eliza-deployment-api-zi3a.onrender.com/docs'
+Working with streamlit: you need to clone the repo via: 'git@github.com:CarolineVHK/Immo-eliza-deployment.git'
   1. Go to the streamlit file : cd streamlit
   2. Run the command: streamlit run homepage.py
   3. Have fun with the prediction 😉 
