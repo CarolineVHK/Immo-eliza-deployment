@@ -1,4 +1,4 @@
-FROM python3.9.6
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 # Set the working directory inside the container
 WORKDIR /app
