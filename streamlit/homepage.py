@@ -14,17 +14,20 @@ st.write("The main goal of this project was to provide accurate price prediction
 # Create a session state variable to manage navigation
 session_state = st.session_state.get("session_state", {"selected_page": None})
 
+st.write("- Houses")
+st.write("- Apartments (in maintenance)")
+
 
 #st.write("Choose the type of real estate for which you'd like to make a prediction:")
 # Handle button click events
-if st.button("Houses"):
-    # Redirect to the "houses" page
-    st.query_params(page="houses")
-elif st.button("Apartments (In Progress)"):
-    # Redirect to the "apartments" page
-    st.query_params(page="apartments")
+# if st.button("Houses"):
+#     # Redirect to the "houses" page
+#     st.query_params(page="houses")
+# elif st.button("Apartments (In Progress)"):
+#     # Redirect to the "apartments" page
+#     st.query_params(page="apartments")
 
-st.write("Please select a real estate type.")
+st.write("  👈    Please select a real estate type in the sidebar.")
 
 st.write("Please note that the prediction functionality for apartments is still in progress. Stay tuned for updates!")
 
@@ -32,6 +35,8 @@ st.write("Please note that the prediction functionality for apartments is still 
 
 
 
-st.sidebar.title("Select which type of real estate you want to make a prediction")
+st.sidebar.write("Made by Van Hoeke Caroline")
+st.sidebar.write("Data-Science and AI student @Becode")
+st.sidebar.write("Project: Immo-Eliza Real Estate Price Prediction")
 
 

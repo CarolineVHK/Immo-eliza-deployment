@@ -23,5 +23,10 @@ streamlit_input = {"PropertySubType" : PropertySubType, "LivingArea" : LivingAre
 
 #create button
 if st.button('Predict the Price'):
-    res = requests.post(url='http://127.0.0.1:8000/predict/houses', data = json.dumps(streamlit_input))
+    res = requests.post(url='http://localhost:8501/houses', data = json.dumps(streamlit_input))
     st.header(f'This is the predicted price for your property : {res.text} €')
+
+
+#http://localhost:8502/houses
+
+#url='http://127.0.0.1:8000/predict/houses'
