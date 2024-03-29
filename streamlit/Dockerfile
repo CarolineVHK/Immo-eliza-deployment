@@ -1,10 +1,10 @@
-FROM python3.9.6
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
 
 # Set the working directory inside the container
-WORKDIR /app
+WORKDIR /streamlit
 
 # Copy the rest of the app
-COPY . /app
+COPY . /streamlit
 
 # Install dependencies
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir --upgrade -r requirements.txt
 EXPOSE 8000
 
 # Set the command to run the uvicorn server
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD CMD ["streamlit", "run", "streamlit_app.py"]

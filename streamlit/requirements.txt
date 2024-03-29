@@ -1,0 +1,10 @@
+#requirements
+fastAPI
+uvicorn
+pydantic
+joblib
+scikit-learn
+pandas
+streamlit
+requests
+
