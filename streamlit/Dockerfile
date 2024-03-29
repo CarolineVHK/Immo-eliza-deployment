@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9.6
 
 # Set the working directory inside the container
 WORKDIR /streamlit
@@ -12,4 +12,4 @@ RUN pip install -r requirements.txt
 
 
 # Set the command to run the uvicorn server
-CMD streamlit run homepage
+CMD ["streamlit", "run", "homepage.py"]
