@@ -23,7 +23,7 @@ streamlit_input = {"PropertySubType" : PropertySubType, "LivingArea" : LivingAre
 
 #create button
 if st.button('Predict the Price'):
-    res = requests.post(url='http://127.0.0.1:8501/houses', data = json.dumps(streamlit_input))
+    res = requests.post(url='https://immo-eliza-deployment-api-zi3a.onrender.com/predict/houses', data = json.dumps(streamlit_input))
     st.header(f'This is the predicted price for your property : {res.text} €')
 
 #'https://immo-eliza-deployment-caroline-streamlit.onrender.com/'
