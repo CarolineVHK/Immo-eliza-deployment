@@ -27,9 +27,10 @@ Working with streamlit: you need to clone the repo via: 'git@github.com:Caroline
 │   ├── pages
 │   │   ├── 1_🏠_houses.py
 │   │   └── 2_🏢_apartments.py
+│   │   └── 3_🖋_contact.py
 │   ├── homepage.py
 │   ├── requirements.txt
-│   └── streamlit_app.py
+├── README.md
 
 
 # Improvements
