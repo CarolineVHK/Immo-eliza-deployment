@@ -14,7 +14,7 @@ Working with streamlit: you need to clone the repo via: 'git@github.com:Caroline
 
 
 # Repo 
-
+```
 ├── app
 │   ├── utils
 │   │   ├── preprocessing_input_api.py
@@ -31,7 +31,7 @@ Working with streamlit: you need to clone the repo via: 'git@github.com:Caroline
 │   ├── homepage.py
 │   ├── requirements.txt
 ├── README.md
-
+```
 
 # Improvements
 
